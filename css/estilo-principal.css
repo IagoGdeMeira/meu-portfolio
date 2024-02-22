@@ -1,0 +1,21 @@
+body {
+    background-color: #c0db9c;
+    margin: 0;
+}
+
+header {
+    background-image: radial-gradient(#22c322, #0b630b);
+    padding: 1em;
+}
+
+header > a {
+    border: 2px solid #22c322;
+    border-radius: 1em;
+    background-color: #eeddee;
+    color: #22c322;
+    font: normal bold 20px Courier, monospace;
+    margin: 0 1em 0 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
