@@ -5,17 +5,23 @@ body {
 
 header {
     background-image: radial-gradient(#22c322, #0b630b);
-    padding: 1em;
+    padding: 0.5em 1em;
 }
 
-header > a {
-    border: 2px solid #22c322;
-    border-radius: 1em;
+header > * {
+    margin: 0 1em 0 0;
+    vertical-align: middle;
+}
+
+header > a.button, header > a > img.button {
     background-color: #eeddee;
+    border: 2px solid #22c322;
+    padding: 5px 10px;
+}
+
+header > a.button {
+    border-radius: 1em;
     color: #22c322;
     font: normal bold 20px Courier, monospace;
-    margin: 0 1em 0 0;
-    padding: 5px 10px;
     text-decoration: none;
-    text-transform: uppercase;
 }
