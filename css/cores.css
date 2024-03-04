@@ -1,3 +1,17 @@
+:root {
+    --body-color: #bacce7;
+    --header-color-1: #4e50b9;
+    --header-text: #e0e8ec;
+}
+
+a.header {
+    color: var(--header-text);
+}
+
 body {
-    
+    background-color: var(--body-color);
+}
+
+header {
+    background-color: var(--header-color-1);
 }
