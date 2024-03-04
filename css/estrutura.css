@@ -1,0 +1,12 @@
+body { margin: 0; }
+
+header > nav {
+    vertical-align: middle;
+}
+
+header > a.button {
+    border-radius: 1em;
+    color: #22c322;
+    font: normal bold 20px Courier, monospace;
+    text-decoration: none;
+}
