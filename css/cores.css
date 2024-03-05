@@ -1,11 +1,25 @@
 :root {
-    --body-color: #bacce7;
-    --header-color-1: #4e50b9;
-    --header-text: #e0e8ec;
+    --azul-claro: #bbcde7;
+    --azul-mais-claro: #e0e8ec;
+    --azul-escuro: #4e50b9;
+    --azul-mais-escuro: #161f79;
+
+    --body-color: var(--azul-claro);
+    --header-color-0: var(--azul-escuro);
+    --header-color-1: var(--azul-mais-escuro);
+    --header-a-text: var(--azul-mais-claro);
+    
+    --header-a-text-hover: var(--azul-mais-escuro);
+    --header-a-bg-hover: var(--azul-mais-claro);
 }
 
 a.header {
-    color: var(--header-text);
+    color: var(--header-a-text);
+}
+
+a.header:hover {
+    background-color: var(--header-a-bg-hover);
+    color: var(--header-a-text-hover);
 }
 
 body {
@@ -13,5 +27,7 @@ body {
 }
 
 header {
-    background-color: var(--header-color-1);
+    background-image: linear-gradient(
+        var(--header-color-0),
+        var(--header-color-1));
 }
