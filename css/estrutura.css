@@ -34,3 +34,10 @@ header > nav > ul > li {
     display: inline-block;
     margin: 0 1.25em 0 0;
 }
+
+@media (max-width: 387px) {
+    header > nav > ul > li {
+        margin: 0 1.25em 0.5em 0;
+        
+    }
+}

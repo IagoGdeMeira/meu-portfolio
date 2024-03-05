@@ -5,9 +5,9 @@
     --azul-mais-escuro: #161f79;
 
     --body-color: var(--azul-claro);
+    --header-a-text: var(--azul-mais-claro);
     --header-color-0: var(--azul-escuro);
     --header-color-1: var(--azul-mais-escuro);
-    --header-a-text: var(--azul-mais-claro);
     
     --header-a-text-hover: var(--azul-mais-escuro);
     --header-a-bg-hover: var(--azul-mais-claro);
