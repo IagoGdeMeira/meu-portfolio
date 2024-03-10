@@ -35,9 +35,29 @@ header > nav > ul > li {
     margin: 0 1.25em 0 0;
 }
 
+main {
+    padding: 2em 3em;
+}
+
+section.perfil {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    padding: 0.75em;
+}
+
+section.perfil > img {
+    border: 5px solid;
+    border-radius: 10%;
+}
+
+section.perfil > h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 @media (max-width: 387px) {
     header > nav > ul > li {
         margin: 0 1.25em 0.5em 0;
-        
     }
 }
