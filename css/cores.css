@@ -18,7 +18,8 @@
     --perfil-border: var(--azul-mais-claro);
     --perfil-img-border: var(--azul-mais-escuro);
     --perfil-text: var(--azul-mais-escuro);
-    
+    --sobremim-h1: var(--azul-mais-escuro);
+
     --header-a-text-hover: var(--azul-mais-escuro);
     --header-a-bg-hover: var(--azul-mais-claro);
 }
@@ -45,10 +46,14 @@ section.perfil, section.sobre-mim {
     border-color: var(--perfil-border);
 }
 
+section.perfil > h2 {
+    color: var(--perfil-text);
+}
+
 section.perfil > picture > img {
     border-color: var(--perfil-img-border);
 }
 
-section.perfil > h2 {
-    color: var(--perfil-text);
+section.sobre-mim > h1 {
+    color: var(--sobremim-h1);
 }

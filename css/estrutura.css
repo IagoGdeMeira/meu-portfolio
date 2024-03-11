@@ -55,7 +55,7 @@ section.perfil {
     display: flex;
     flex-direction: column;
     max-height: min-content;
-    max-width: fit-content;
+    max-width: auto;
 }
 
 section.perfil > picture > img {
@@ -69,7 +69,11 @@ section.perfil > h2 {
 }
 
 section.sobre-mim {
-    width: fit-content;
+    width: auto;
+}
+
+section.sobre-mim > h1 {
+    font: bold xx-large 'Courier New', monospace, sans-serif;
 }
 
 @media (max-width: 768px) {
