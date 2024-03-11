@@ -36,24 +36,35 @@ header > nav > ul > li {
 }
 
 main {
-    padding: 2em 3em;
+    display: grid;
+    gap: 1em;
+    margin: auto;
+    max-width: 1200px;
+    padding: 1em 0.5em;
 }
 
-section.perfil {
+section.perfil, section.sobre-mim {
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    max-width: fit-content;
+    border: 10px solid;
+    border-radius: 35px;
     padding: 0.75em;
 }
 
-section.perfil > img {
-    border: 5px solid;
+section.perfil {
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    max-width: fit-content;
+}
+
+section.perfil > picture > img {
+    border: 7px solid;
     border-radius: 10%;
 }
 
 section.perfil > h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 @media (max-width: 387px) {

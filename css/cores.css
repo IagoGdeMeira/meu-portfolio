@@ -3,12 +3,19 @@
     --azul-mais-claro: #e0e8ec;
     --azul-escuro: #4e50b9;
     --azul-mais-escuro: #161f79;
+    --branco: #f2f2f2;
 
-    --body-color: var(--azul-claro);
+    --body-color: var(--azul-claro) ;
     --header-a-text: var(--azul-mais-claro);
-    --header-color-0: var(--azul-escuro);
-    --header-color-1: var(--azul-mais-escuro);
-    --perfil-background: var(--azul-mais-claro);
+    --header-color: linear-gradient(
+        var(--azul-escuro),
+        var(--azul-mais-escuro)
+    );
+    --perfil-background: linear-gradient(
+        var(--azul-mais-claro) 10%,
+        var(--branco)
+    );
+    --perfil-border: var(--azul-mais-claro);
     --perfil-img-border: var(--azul-mais-escuro);
     --perfil-text: var(--azul-mais-escuro);
     
@@ -30,16 +37,15 @@ body {
 }
 
 header {
-    background-image: linear-gradient(
-        var(--header-color-0),
-        var(--header-color-1));
+    background-image: var(--header-color);
 }
 
-section.perfil {
-    background-color: var(--perfil-background);
+section.perfil, section.sobre-mim {
+    background-image: var(--perfil-background);
+    border-color: var(--perfil-border);
 }
 
-section.perfil > img {
+section.perfil > picture > img {
     border-color: var(--perfil-img-border);
 }
 
