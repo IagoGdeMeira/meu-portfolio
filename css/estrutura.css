@@ -127,6 +127,7 @@ section.tecnologias > ul > li > img {
 
     section.tecnologias > ul > li > img {
         border: none;
+        padding: 0;
     }
  }
 
