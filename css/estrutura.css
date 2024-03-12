@@ -44,7 +44,9 @@ main {
     padding: 1em 0.5em;
 }
 
-section.perfil, section.sobre-mim {
+section.perfil,
+section.sobre-mim,
+section.tecnologias {
     border: 10px solid;
     border-radius: 35px;
     padding: 0.75em;
@@ -64,7 +66,7 @@ section.perfil > picture > img {
 }
 
 section.perfil > h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: bolder x-large 'Courier New', monospace, sans-serif;
     text-align: center;
 }
 
@@ -72,18 +74,61 @@ section.sobre-mim {
     width: auto;
 }
 
-section.sobre-mim > h1 {
+section.sobre-mim > h1,
+section.tecnologias > h1 {
     font: bold xx-large 'Courier New', monospace, sans-serif;
 }
 
+section.sobre-mim > p,
+section.tecnologias > p,
+section.tecnologias > ul > li {
+    font: large 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+section.tecnologias > h1 {
+    text-align: center;
+}
+
+section.tecnologias > ul {
+    list-style-type: none;
+}
+
+section.tecnologias > ul > li {
+    margin-bottom: 1em;
+    display: flex;
+    gap: 2em;
+}
+
+section.tecnologias > ul > li > img {
+    border-right: 5px solid;
+    height: auto;
+    padding: 0 1.5em 0 0;
+    width: 90px;
+}
+
 @media (max-width: 768px) {
-    main {
+    main,
+    section.tecnologias > ul > li {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-}
+    
+    section.tecnologias > ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    section.tecnologias > ul > li {
+        border-bottom: 5px solid;
+    }
+
+    section.tecnologias > ul > li > img {
+        border: none;
+    }
+ }
 
 @media (max-width: 387px) {
     header > nav > ul > li {

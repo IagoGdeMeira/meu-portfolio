@@ -5,7 +5,9 @@
     --azul-mais-escuro: #161f79;
     --branco: #f2f2f2;
 
-    --body-color: var(--azul-claro) ;
+    --body-color: var(--azul-claro);
+    --general-texts: var(--azul-escuro);
+    --h1: var(--azul-mais-escuro);
     --header-a-text: var(--azul-mais-claro);
     --header-color: linear-gradient(
         var(--azul-escuro),
@@ -18,7 +20,6 @@
     --perfil-border: var(--azul-mais-claro);
     --perfil-img-border: var(--azul-mais-escuro);
     --perfil-text: var(--azul-mais-escuro);
-    --sobremim-h1: var(--azul-mais-escuro);
 
     --header-a-text-hover: var(--azul-mais-escuro);
     --header-a-bg-hover: var(--azul-mais-claro);
@@ -41,7 +42,9 @@ header {
     background-image: var(--header-color);
 }
 
-section.perfil, section.sobre-mim {
+section.perfil,
+section.sobre-mim,
+section.tecnologias {
     background-image: var(--perfil-background);
     border-color: var(--perfil-border);
 }
@@ -54,6 +57,17 @@ section.perfil > picture > img {
     border-color: var(--perfil-img-border);
 }
 
-section.sobre-mim > h1 {
-    color: var(--sobremim-h1);
+section.sobre-mim > h1,
+section.tecnologias > h1 {
+    color: var(--h1);
+}
+
+section.sobre-mim > p,
+section.tecnologias > p,
+section.tecnologias > ul > li {
+    color: var(--general-texts);
+}
+
+section.tecnologias > ul > li > img {
+    border-color: var(--azul-escuro);
 }
