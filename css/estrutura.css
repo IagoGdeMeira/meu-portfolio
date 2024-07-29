@@ -1,138 +1,76 @@
-body {
+*, *::after, *::before {
     margin: 0;
 }
 
-a.header {
-    border-radius: 0.5em;
-    font: bold larger 'Courier New', monospace, sans-serif;
-    font-size: larger;
-    font-weight: bold;
-    padding: 2px 5px;
+a, a:visited {
     text-decoration: none;
 }
 
-a.header:hover {
-    transition: 0.2s;
+body {
+    display: flex;
+    height: 100vh;
+
+    font-family: 'Smooch Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header {
-    border-radius: 0 0 1em 1em;
-}
-
-header > nav {
-    vertical-align: middle;
-}
-
-header > nav > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0.5em;
-    padding-inline-start: 1em;
-}
-
-header > nav > ul > li {
-    display: inline-block;
-    margin: 0 1.25em 0 0;
+nav {
+    padding: 10px 0;
 }
 
 main {
-    display: grid;
-    gap: 1em;
-    grid-template-columns: 1fr auto;
-    margin: auto;
-    max-width: 1200px;
-    padding: 1em 0.5em;
+    flex-grow: 1;
+
+    overflow-y: auto;
 }
 
-section.perfil,
-section.sobre-mim,
-section.tecnologias {
-    border: 10px solid;
-    border-radius: 35px;
-    padding: 0.75em;
+.nav-site {
+    justify-content: space-between;
+
+    text-align: center;
+
+    max-height: fit-content;
+    min-height: 100%;
+    width: 220px;
+
+    overflow-y: auto;
 }
 
-section.perfil {
-    align-items: center;
+.nav-site-photo {
+    border-bottom: 2px solid;
+}
+
+.nav-site-photo img {
+    height: auto;
+    width: 120px;
+
+    border: 2px solid;
+    border-radius: 50%;
+    object-fit: cover;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.nav-site-content {
+    font-size: x-large;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.nav-site-content ul {
+    padding: 0;
+    list-style: none;
+}
+
+.nav-site-content ul li a {
+    color: #EAEAEA;
+    font-weight: normal;
+}
+
+.nav-site, .nav-site-photo, .nav-site-content {
+    padding: 10px;
+}
+
+.nav-site, .nav-site-content {
     display: flex;
     flex-direction: column;
-    max-height: min-content;
-    max-width: auto;
-}
-
-section.perfil > picture > img {
-    border: 7px solid;
-    border-radius: 10%;
-}
-
-section.perfil > h2 {
-    font: bolder x-large 'Courier New', monospace, sans-serif;
-    text-align: center;
-}
-
-section.sobre-mim {
-    width: auto;
-}
-
-section.sobre-mim > h1,
-section.tecnologias > h1 {
-    font: bold xx-large 'Courier New', monospace, sans-serif;
-}
-
-section.sobre-mim > p,
-section.tecnologias > p,
-section.tecnologias > ul > li {
-    font: large 'Times New Roman', Times, serif;
-    text-align: justify;
-}
-
-section.tecnologias > h1 {
-    text-align: center;
-}
-
-section.tecnologias > ul {
-    list-style-type: none;
-}
-
-section.tecnologias > ul > li {
-    margin-bottom: 1em;
-    display: flex;
-    gap: 2em;
-}
-
-section.tecnologias > ul > li > img {
-    border-right: 5px solid;
-    height: auto;
-    padding: 0 1.5em 0 0;
-    width: 90px;
-}
-
-@media (max-width: 768px) {
-    main,
-    section.tecnologias > ul > li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    section.tecnologias > ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    section.tecnologias > ul > li {
-        border-bottom: 5px solid;
-    }
-
-    section.tecnologias > ul > li > img {
-        border: none;
-        padding: 0;
-    }
- }
-
-@media (max-width: 387px) {
-    header > nav > ul > li {
-        margin: 0 1.25em 0.5em 0;
-    }
 }
