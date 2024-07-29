@@ -3,14 +3,21 @@ body {
 }
 
 .nav-site {
-    color: #EAEAEA;
     background-color: #57864F;
 }
 
-.nav-site-photo, .nav-site-photo img {
-    border-color: #EAEAEA;
+.nav-site-content ul li a:hover {
+    background-color: #85ca78;
 }
 
 .nav-site-photo img:hover {
-    box-shadow: 0 0 15px #EAEAEA4D;
+    box-shadow: 0 0 15px #EAEAEA80;
+}
+
+.nav-site, .nav-site-content ul li a {
+    color: #EAEAEA;
+}
+
+.nav-site-credits, .nav-site-photo, .nav-site-photo img {
+    border-color: #EAEAEA;
 }
