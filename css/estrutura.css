@@ -20,7 +20,10 @@ nav {
 main {
     flex-grow: 1;
 
+    font-size: xx-large;
     overflow-y: auto;
+
+    padding: 2vh;
 }
 
 .nav-site {
@@ -31,6 +34,7 @@ main {
 
     height: 100vh;
     width: 220px;
+    position: fixed;
 
     overflow-y: auto;
     -ms-overflow-style: none; /* IE e Edge */
@@ -69,7 +73,7 @@ main {
 
 .nav-site-content ul li a:hover {
     font-weight: bold;
-    transition-duration: 0,3s;
+    transition: 0.3s ease;
 }
 
 .nav-site-photo {
@@ -94,4 +98,29 @@ main {
 .nav-site, .nav-site-content {
     display: flex;
     flex-direction: column;
+}
+
+.navbar-icon {
+    cursor: pointer;
+    font-size: xx-large;
+
+    display: none;
+}
+
+@media (max-width: 660px) {
+    .nav-site {
+        width: 0;
+        padding: 0;
+        z-index: 1;
+    }
+
+    .navbar-icon {
+        z-index: 2;
+        display: block;
+
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
 }

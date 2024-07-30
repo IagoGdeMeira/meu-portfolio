@@ -21,3 +21,7 @@ body {
 .nav-site-credits, .nav-site-photo, .nav-site-photo img {
     border-color: #EAEAEA;
 }
+
+.navbar-icon {
+    color: #57864F;
+}
